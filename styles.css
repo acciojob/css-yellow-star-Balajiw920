@@ -1,31 +1,52 @@
-/*  your css code here. If applicable */
 .star {
-  width: 0;
-  height: 0;
-  border-right: 50px solid transparent;
-  border-bottom: 35px solid yellow;
-  border-left: 50px solid transparent;
-  position: relative;
+width: 0;
+height: 0;
+border-right: 50px solid transparent;
+border-bottom: 35px solid yellow;
+border-left: 50px solid transparent;
+position: relative;
 }
 
 .star::before {
-  content: "";
-  position: absolute;
-  top: -25px;
-  left: -50px;
-  border-right: 50px solid transparent;
-  border-bottom: 35px solid yellow;
-  border-left: 50px solid transparent;
-  transform: rotate(35deg);
+content: "";
+position: absolute;
+top: -25px;
+left: -50px;
+border-right: 50px solid transparent;
+border-bottom: 35px solid yellow;
+border-left: 50px solid transparent;
+transform: rotate(35deg);
 }
 
 .star::after {
-  content: "";
-  position: absolute;
-  top: -25px;
-  left: 0;
-  border-right: 50px solid transparent;
-  border-bottom: 35px solid yellow;
-  border-left: 50px solid transparent;
-  transform: rotate(-35deg);
+content: "";
+position: absolute;
+top: -25px;
+left: 0;
+border-right: 50px solid transparent;
+border-bottom: 35px solid yellow;
+border-left: 50px solid transparent;
+transform: rotate(-35deg);
+}
+
+.star::before:before {
+content: "";
+position: absolute;
+top: 0;
+left: -50px;
+border-right: 50px solid transparent;
+border-bottom: 35px solid yellow;
+border-left: 50px solid transparent;
+transform: rotate(-70deg);
+}
+
+.star::after:after {
+content: "";
+position: absolute;
+top: 0;
+left: 50px;
+border-right: 50px solid transparent;
+border-bottom: 35px solid yellow;
+border-left: 50px solid transparent;
+transform: rotate(70deg);
 }
